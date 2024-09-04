@@ -52,4 +52,10 @@ The Storybook feature allows you to explore and test all widgets in the UI kit. 
   * Device Selection: Choose from a variety of devices (e.g., phones, tablets) to see how the widget scales and adapts to different screen sizes and resolutions.
 <img width="1138" alt="Screenshot 2024-09-04 at 10 09 43 PM" src="https://github.com/user-attachments/assets/47d43c70-c41b-4f83-860f-1d65fff5b026">
 
-  
+# How theming is working
+
+# Dexlist
+
+# Needs to be done
+* Left to right is not working
+* Icons don't change in the dark mode
