@@ -1,4 +1,4 @@
-# Flutter UI Kit Documentation
+# Flutter Polaris UI Kit
 
 **Overview**
 
