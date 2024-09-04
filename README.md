@@ -132,7 +132,7 @@ The DexListTileLeading class includes a variety of static methods that return in
   * Creates a leading widget that displays a title, subtitle, and an icon.
   
 * titleSubtitleIcon24Top({required String title, required String subtitle, required Widget icon})
-  * Similar to titleSubtitleIcon, but the icon is positioned 24 pixels from the top.
+  * Similar to titleSubtitleIcon, but the icon size is 24.
   
 **RadioButton-Based Leadings**
 * titleSubtitleRadioButton({required String title, required String subtitle, required bool selected})
@@ -144,10 +144,10 @@ The DexListTileLeading class includes a variety of static methods that return in
 **Small Title-Based Leadings**
 
 * titleSubtitleS({required String title, required String subtitle})
-  * Creates a leading widget that displays a smaller version of a title and subtitle.
+  * Creates a leading widget that displays a smaller version subtitle.
   
 * titleSubtitleSIcon({required String title, required String subtitle, required Widget icon})
-  * Creates a leading widget that displays a smaller title, subtitle, and an icon.
+  * Creates a leading widget that displays a title, smaller subtitle, and an icon.
   
 **Slider Leading**
 
@@ -175,8 +175,7 @@ DexListTile(
 )
 ```
 
-In this example, the DexListTile is configured with an icon as the leading widget, demonstrating how to use one of the factory methods provided by DexListTileLeading.
-
+DexListTileTrailing should be the same structure as DexListTileLeading but with different widgets for the trailing part.
 
 # Needs to be done
 * Left to right is not working
