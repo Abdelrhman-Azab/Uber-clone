@@ -109,55 +109,55 @@ The DexListTileLeading class includes a variety of static methods that return in
 * textButtonDestructive({required String title})
   * Creates a leading widget that displays a destructive text button.
   
-*textButtonLink({required String title})
-  *Creates a leading widget that displays a link-style text button.
+* textButtonLink({required String title})
+  * Creates a leading widget that displays a link-style text button.
 
-*textButtonLinkIcon({required String title, required Widget icon})
-  *Creates a leading widget that displays a link-style text button with an icon.
+* textButtonLinkIcon({required String title, required Widget icon})
+  * Creates a leading widget that displays a link-style text button with an icon.
   
-*textCentered({required String text})
-  *Creates a leading widget that displays centered text.
+* textCentered({required String text})
+  * Creates a leading widget that displays centered text.
   
 **Title-Based Leadings**
-*title({required String title})
-  *Creates a leading widget that displays a title.
+* title({required String title})
+  * Creates a leading widget that displays a title.
   
-*titleIcon({required String title, required Widget icon})
-  *Creates a leading widget that displays a title with an accompanying icon.
+* titleIcon({required String title, required Widget icon})
+  * Creates a leading widget that displays a title with an accompanying icon.
   
-*titleSubtitle({required String title, required String subtitle})
-  *Creates a leading widget that displays a title with a subtitle.
+* titleSubtitle({required String title, required String subtitle})
+  * Creates a leading widget that displays a title with a subtitle.
   
-*titleSubtitleIcon({required String title, required String subtitle, required Widget icon})
-  *Creates a leading widget that displays a title, subtitle, and an icon.
+* titleSubtitleIcon({required String title, required String subtitle, required Widget icon})
+  * Creates a leading widget that displays a title, subtitle, and an icon.
   
-*titleSubtitleIcon24Top({required String title, required String subtitle, required Widget icon})
-  *Similar to titleSubtitleIcon, but the icon is positioned 24 pixels from the top.
+* titleSubtitleIcon24Top({required String title, required String subtitle, required Widget icon})
+  * Similar to titleSubtitleIcon, but the icon is positioned 24 pixels from the top.
   
 **RadioButton-Based Leadings**
-*titleSubtitleRadioButton({required String title, required String subtitle, required bool selected})
-  *Creates a leading widget that displays a title, subtitle, and a radio button indicating selection.
+* titleSubtitleRadioButton({required String title, required String subtitle, required bool selected})
+  * Creates a leading widget that displays a title, subtitle, and a radio button indicating selection.
   
-*titleRadioButton({required String title, required bool selected})
-  *Creates a leading widget that displays a title with a radio button indicating selection.
+* titleRadioButton({required String title, required bool selected})
+  * Creates a leading widget that displays a title with a radio button indicating selection.
   
 **Small Title-Based Leadings**
 
-*titleSubtitleS({required String title, required String subtitle})
-  *Creates a leading widget that displays a smaller version of a title and subtitle.
+* titleSubtitleS({required String title, required String subtitle})
+  * Creates a leading widget that displays a smaller version of a title and subtitle.
   
-*titleSubtitleSIcon({required String title, required String subtitle, required Widget icon})
-  *Creates a leading widget that displays a smaller title, subtitle, and an icon.
+* titleSubtitleSIcon({required String title, required String subtitle, required Widget icon})
+  * Creates a leading widget that displays a smaller title, subtitle, and an icon.
   
 **Slider Leading**
 
-*dexSlider({required DexSliderConfig sliderConfig})
-  *Creates a leading widget that contains a DexSlider configured with the provided DexSliderConfig.
+* dexSlider({required DexSliderConfig sliderConfig})
+  * Creates a leading widget that contains a DexSlider configured with the provided DexSliderConfig.
   
 **Custom Leading**
 
-*custom({required Widget child})
-  *Allows the creation of a custom leading widget by providing a custom child widget.
+* custom({required Widget child})
+  * Allows the creation of a custom leading widget by providing a custom child widget.
   
 ***Usage***
 
