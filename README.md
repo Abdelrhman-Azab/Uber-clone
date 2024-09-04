@@ -54,9 +54,11 @@ The Storybook feature allows you to explore and test all widgets in the UI kit. 
 
 # How theming is working
 
-# Dexlist
+# DexListTile
 
-The DexListTile widget is a customizable list tile component designed to be used within a DexList widget. It provides options for adding leading and trailing widgets, handling taps, displaying dividers, and applying custom styles. This widget is displayed differently based on the platform (android & ios).
+The DexListTile widget is a customizable list tile component designed to be used within a DexList widget. It provides options for adding leading and trailing widgets, handling taps, displaying dividers, and applying custom styles.
+
+# DexListTile must be a child of DexList to get the platform theme (android - ios)
 
 ```
 class DexListTile extends StatefulWidget {
