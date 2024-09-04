@@ -159,7 +159,7 @@ The DexListTileLeading class includes a variety of static methods that return in
 * custom({required Widget child})
   * Allows the creation of a custom leading widget by providing a custom child widget.
   
-*Usage*
+**Usage**
 
 The DexListTileLeading class is designed to be extended or instantiated using one of the provided factory methods. It offers a wide range of pre-defined leading widgets to suit various UI requirements, from simple text or icon widgets to more complex combinations of titles, subtitles, and icons.
 
