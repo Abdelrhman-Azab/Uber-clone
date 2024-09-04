@@ -23,7 +23,7 @@ dependencies:
   flutter_library:
     git:
       url: git@github.com:dexcom-inc/flutter-polaris-uikit.git
-ref: main
+ref: master
 ```
 Run `flutter pub get` to install the package.
 
