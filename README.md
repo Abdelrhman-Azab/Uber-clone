@@ -96,17 +96,18 @@ render(BuildContext context) => Container();
 * Purpose: This method should be overridden by subclasses to define the specific rendering logic for the leading widget.
 * Returns: A Widget that represents the leading content.
 * Default Implementation: Returns an empty Container widget.
-* 
+
 **Static Factory Methods**
   
 The DexListTileLeading class includes a variety of static methods that return instances of different leading widget types:
 
 **Text-Based Leadings**
-*description({required String text})
-  *Creates a leading widget that displays a description text.
+
+* description({required String text})
+  * Creates a leading widget that displays a description text.
   
-*textButtonDestructive({required String title})
-  *Creates a leading widget that displays a destructive text button.
+* textButtonDestructive({required String title})
+  * Creates a leading widget that displays a destructive text button.
   
 *textButtonLink({required String title})
   *Creates a leading widget that displays a link-style text button.
