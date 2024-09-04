@@ -22,7 +22,28 @@ To add the Flutter UI Kit package to your project, include the following depende
 dependencies:
   flutter_library:
     git:
-      url: git@github.com:dexcom-inc/flutter-polaris-uikit.gi
-t
+      url: git@github.com:dexcom-inc/flutter-polaris-uikit.git
 ref: main
 ```
+Run `flutter pub get` to install the package.
+
+**Storybook**
+
+The Storybook feature allows you to explore and test all widgets in the UI kit. To run the `storybook`, follow these steps:
+1. Navigate to the storybook directory in the root of the package.
+2. Run the following command:
+   `flutter run`
+3. The app will launch, displaying all available widgets with their customizable properties.
+
+**Storybook Interface Overview**
+
+* Left Panel - Widget Selection:
+  * This panel displays a list of all the widgets available in the UI kit. You can browse through the list and select any widget you want to preview.
+* Right Panel - Customization Options:
+  * Once a widget is selected, the right panel allows you to customize its properties.
+  * You can modify aspects such as colors, text, padding, and any other properties exposed by the widget.
+* Middle Panel - Widget Preview:
+  * This central area displays the selected widget as it would appear with the applied customizations.
+  * This live preview helps you see how the widget behaves and looks with different settings.
+* Bottom Panel - Environment Settings:
+  * The bottom panel provides controls to simulate different environments.
