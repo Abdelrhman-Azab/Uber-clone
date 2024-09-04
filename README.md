@@ -179,6 +179,8 @@ DexListTile(
 
 DexListTileTrailing should be the same structure as DexListTileLeading but with different widgets for the trailing part.
 
+<img width="1141" alt="Screenshot 2024-09-04 at 11 43 27 PM" src="https://github.com/user-attachments/assets/2c5b5b08-cd87-408c-8686-887f2bce8d6c">
+
 # Needs to be done
 * Left to right is not working
 * Icons don't change in the dark mode
