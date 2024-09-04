@@ -50,6 +50,6 @@ The Storybook feature allows you to explore and test all widgets in the UI kit. 
   * Light/Dark Mode: Toggle between light and dark themes to see how the widget adapts to different color schemes.
   * Platform (Android/iOS) Switch between Android and iOS to see how the widget appears on different platforms.
   * Device Selection: Choose from a variety of devices (e.g., phones, tablets) to see how the widget scales and adapts to different screen sizes and resolutions.
-<img width="1138" alt="Screenshot 2024-09-04 at 10 09 43 PM" src="https://github.com/user-attachments/assets/47d43c70-c41b-4f83-860f-1d65fff5b026">
+  <img width="1138" alt="Screenshot 2024-09-04 at 10 09 43 PM" src="https://github.com/user-attachments/assets/47d43c70-c41b-4f83-860f-1d65fff5b026">
 
   
