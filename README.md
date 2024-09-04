@@ -56,6 +56,127 @@ The Storybook feature allows you to explore and test all widgets in the UI kit. 
 
 # Dexlist
 
+The DexListTile widget is a customizable list tile component designed to be used within a DexList widget. It provides options for adding leading and trailing widgets, handling taps, displaying dividers, and applying custom styles. This widget is displayed differently based on the platform (android & ios).
+
+```
+class DexListTile extends StatefulWidget {
+  final DexListTileLeading? leading;
+  final DexListTileTrailing? trailing;
+  final GestureTapCallback? onTap;
+  final bool hasMoreInfo;
+  final bool? showDivider;
+  final DexListStyle? cellStyle;
+  final bool selected;
+
+  const DexListTile({
+    super.key,
+    this.leading,
+    this.trailing,
+    this.onTap,
+    this.hasMoreInfo = false,
+    this.showDivider,
+    this.cellStyle,
+    this.selected = false,
+  });
+
+  @override
+  State<DexListTile> createState() => _DexListTileState();
+}
+```
+
+# DexListTileLeading Abstract Class
+
+**Overview**
+
+The DexListTileLeading abstract class serves as a blueprint for creating leading widgets within the DexListTile component. This class provides a flexible interface for defining various types of leading content, such as icons, text, buttons, and custom widgets, which can be displayed at the beginning (leading edge) of a list tile. The class also includes several static factory methods to easily instantiate specific types of leading widgets.
+
+**Methods**
+render(BuildContext context) => Container();
+
+* Purpose: This method should be overridden by subclasses to define the specific rendering logic for the leading widget.
+* Returns: A Widget that represents the leading content.
+* Default Implementation: Returns an empty Container widget.
+* 
+**Static Factory Methods**
+  
+The DexListTileLeading class includes a variety of static methods that return instances of different leading widget types:
+
+**Text-Based Leadings**
+*description({required String text})
+  *Creates a leading widget that displays a description text.
+  
+*textButtonDestructive({required String title})
+  *Creates a leading widget that displays a destructive text button.
+  
+*textButtonLink({required String title})
+  *Creates a leading widget that displays a link-style text button.
+
+*textButtonLinkIcon({required String title, required Widget icon})
+  *Creates a leading widget that displays a link-style text button with an icon.
+  
+*textCentered({required String text})
+  *Creates a leading widget that displays centered text.
+  
+**Title-Based Leadings**
+*title({required String title})
+  *Creates a leading widget that displays a title.
+  
+*titleIcon({required String title, required Widget icon})
+  *Creates a leading widget that displays a title with an accompanying icon.
+  
+*titleSubtitle({required String title, required String subtitle})
+  *Creates a leading widget that displays a title with a subtitle.
+  
+*titleSubtitleIcon({required String title, required String subtitle, required Widget icon})
+  *Creates a leading widget that displays a title, subtitle, and an icon.
+  
+*titleSubtitleIcon24Top({required String title, required String subtitle, required Widget icon})
+  *Similar to titleSubtitleIcon, but the icon is positioned 24 pixels from the top.
+  
+**RadioButton-Based Leadings**
+*titleSubtitleRadioButton({required String title, required String subtitle, required bool selected})
+  *Creates a leading widget that displays a title, subtitle, and a radio button indicating selection.
+  
+*titleRadioButton({required String title, required bool selected})
+  *Creates a leading widget that displays a title with a radio button indicating selection.
+  
+**Small Title-Based Leadings**
+
+*titleSubtitleS({required String title, required String subtitle})
+  *Creates a leading widget that displays a smaller version of a title and subtitle.
+  
+*titleSubtitleSIcon({required String title, required String subtitle, required Widget icon})
+  *Creates a leading widget that displays a smaller title, subtitle, and an icon.
+  
+**Slider Leading**
+
+*dexSlider({required DexSliderConfig sliderConfig})
+  *Creates a leading widget that contains a DexSlider configured with the provided DexSliderConfig.
+  
+**Custom Leading**
+
+*custom({required Widget child})
+  *Allows the creation of a custom leading widget by providing a custom child widget.
+  
+***Usage***
+
+The DexListTileLeading class is designed to be extended or instantiated using one of the provided factory methods. It offers a wide range of pre-defined leading widgets to suit various UI requirements, from simple text or icon widgets to more complex combinations of titles, subtitles, and icons.
+
+Example usage in a DexListTile:
+
+```
+DexListTile(
+  leading: DexListTileLeading.icon(icon: Icon(Icons.person)),
+  trailing: DexListTileTrailing.text(title: 'More info'),
+  onTap: () {
+    print('Tile tapped!');
+  },
+)
+```
+
+In this example, the DexListTile is configured with an icon as the leading widget, demonstrating how to use one of the factory methods provided by DexListTileLeading.
+
+
 # Needs to be done
 * Left to right is not working
 * Icons don't change in the dark mode
